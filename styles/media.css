@@ -1,0 +1,781 @@
+/* ----------------------------------------------------------------
+	Responsive CSS
+-----------------------------------------------------------------*/
+
+@media (max-width: 1600px) {
+  .custom_parts .left_content .content {
+    padding: 20px 100px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .section_2 .video_section {
+    height: 772px;
+    width: 100%;
+    overflow: hidden;
+  }
+  /* .section_2 .video_section video{
+		width: 100%;
+	} */
+}
+
+@media (min-width: 991px) and (max-width: 1440px) {
+  .header_section {
+    height: calc(100vh - 69px);
+  }
+  .header_section .text-content {
+    padding: 85px 70px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header_section .text-content {
+    padding: 110px 100px;
+  }
+  .header_section .hero_title {
+    font-size: 55px;
+    line-height: 51px;
+  }
+  .header_section .hero_para {
+    margin: 16px 0;
+    font-size: 18px;
+  }
+  .header_section .btn {
+    padding: 14px 28px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+  .header_section .arrow_down {
+    margin: -40px auto 0;
+    font-size: 19px;
+    width: 50px;
+    height: 50px;
+  }
+  .how_it_works .section_title {
+    font-size: 50px;
+    padding-top: 6px;
+    margin-bottom: 30px;
+  }
+  .how_it_works {
+    padding: 80px 0;
+  }
+  .how_it_works .head {
+    font-size: 18px;
+    margin: 12px 0 5px;
+  }
+  .section_title {
+    font-size: 50px;
+    padding-top: 8px;
+    margin-bottom: 14px;
+  }
+  .drone_section .name {
+    font-size: 40px;
+    margin: 9px 0 20px;
+  }
+  .drone_info_box {
+    padding: 80px 0;
+  }
+  .drone_info .drone_features img {
+    margin-right: 18px;
+  }
+  .drone_info .drone_features p {
+    font-size: 18px;
+  }
+  .drone_info .view_detail {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  .drone_section {
+    margin-bottom: 80px;
+  }
+  footer .section_title {
+    font-size: 60px;
+  }
+  footer {
+    padding: 70px 0;
+  }
+  footer .subscribe_newlatter .input {
+    margin-top: 8px;
+    height: 58px;
+    padding: 13px;
+  }
+  .product_header .hero_title {
+    font-size: 45px;
+    padding-top: 7px;
+  }
+  .cash_back {
+    top: 20px;
+    width: 180px;
+  }
+  nav .nav-link {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  .custom_parts .drone_catagory label {
+    width: 200px;
+  }
+  .custom_parts .left_content .content {
+    padding: 20px 70px;
+  }
+  .custom_parts .right_content .heading {
+    font-size: 30px;
+  }
+  .find_product .caption {
+    font-size: 10px;
+  }
+  .custom_parts .drone_catagory.label_outline label {
+    width: 200px;
+    height: 200px;
+  }
+  .custom_parts .right_content .content {
+    padding: 20px;
+  }
+  .right_content .total_price h3 {
+    font-size: 20px;
+  }
+  .custom_parts .drone_catagory label h2 {
+    font-size: 30px;
+  }
+  .custom_parts .swiper_btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .custom_parts .label_outline.outline_sm label {
+    width: 150px;
+    height: 150px;
+    font-size: 16px;
+    margin-right: 17px;
+  }
+  .custom_parts .drone_catagory .title {
+    bottom: 9px;
+    left: 11px;
+  }
+  .section_1 .swiper-slide .footer {
+    padding: 18px;
+  }
+  .section_1 .swiper-slide .footer .text {
+    font-size: 20px;
+    margin-right: 25px;
+  }
+  .section_2 .text_content {
+    padding: 45px;
+  }
+  .section_2 .text_content h2 {
+    font-size: 48px;
+    margin-bottom: 18px;
+  }
+  .section_2 .text_content p {
+    font-size: 16px;
+    margin-bottom: 80px;
+  }
+
+  .custom_parts input + label .option-2 {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+  .completed-builds
+    .product_detail_main
+    .detail_content
+    .browse_product_main
+    .price {
+    font-size: 14px;
+  }
+
+  .build_drone .social-box {
+    margin: auto 5px;
+  }
+  .build_drone .social-box .social-icon {
+    padding: 4px 10px;
+  }
+  .build_drone .social-box .base-icon {
+    padding: 4px 7px;
+  }
+  .build_drone .browse_product_main .column_2 {
+    margin-right: 10px;
+  }
+  .build_drone .browse_product_main .column_2_total {
+    margin-right: 10px;
+  }
+  .build_drone .browse_product_main .column_2_total .caption {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .drone_parts {
+    height: 100%;
+  }
+  .drone_parts .social-box {
+    width: 60%;
+  }
+
+  .custom_parts .tooltip {
+    top: -12rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .navbar-collapse {
+    left: 70px;
+  }
+  nav .nav-link {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  .custom_parts .left_content .content {
+    padding: 20px 40px;
+  }
+  .custom_parts .swiper_btns {
+    right: 40px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navbar-collapse {
+    position: fixed !important;
+    z-index: 999999;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding-top: 70px;
+    transform: translateX(-100%);
+    transition: 0.4s;
+  }
+  .navbar-collapse.show {
+    transform: translateX(0%);
+  }
+  .navbar-collapse .nav-link {
+    display: block;
+    color: #000;
+    font-size: 25px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .close_popup {
+    position: absolute;
+    font-size: 45px;
+    color: #000;
+    right: 40px;
+    top: 10px;
+  }
+  .product_table .product_detail {
+    padding: 12px 10px;
+  }
+  .custom_parts .left_content .content {
+    padding: 20px 30px;
+  }
+  .custom_parts .drone_catagory {
+    padding-right: 0px;
+  }
+  .custom_parts .drone_catagory label {
+    margin-right: 30px;
+  }
+  .custom_parts .right_content .content {
+    padding: 20px;
+  }
+  .right_content .product_checkout {
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+  /* .product_checkout .btn{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 10px;
+	} */
+  .custom_parts .right_content .heading {
+    text-align: center;
+  }
+  .custom_parts .right_content .content {
+    width: 100%;
+  }
+  .drone_catagory.label_outline label {
+    margin-top: 18px;
+  }
+  .custom_parts .right_content .para {
+    text-align: center;
+  }
+  .right_content .main_content {
+    height: auto;
+  }
+  .right_content .product_checkout {
+    justify-content: space-between;
+  }
+
+  .completed-builds
+    .product_detail_main
+    .detail_content
+    .browse_product_main
+    .price {
+    font-size: 14px;
+  }
+  .completed-builds .section_1 .section_title {
+    margin-left: 20%;
+  }
+
+  .build_drone .browse_product_main .column_2 {
+    margin-right: 10px;
+  }
+  .build_drone .browse_product_main .column_2_total {
+    margin-right: 10px;
+  }
+
+  .build_drone_right {
+    padding-top: 40px !important;
+    margin-top: 40px;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .build_drone .social-box {
+    margin: auto auto;
+    width: 70%;
+  }
+  .build_drone .btn-submit {
+    width: 30%;
+  }
+
+  .saved_drones .drone-box h3 {
+    font-size: 25px;
+  }
+
+  .drone_parts {
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .completed-builds .product_detail_main .detail_content .product_title {
+    margin-top: 40px;
+  }
+
+  .custom_parts .tooltip {
+    top: -12rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .section::before {
+    width: 100%;
+    z-index: 1;
+  }
+  .header_section .btn {
+    padding: 12px 25px;
+    margin-bottom: 50px;
+  }
+  .drone_section::after {
+    width: 100%;
+  }
+  footer .box {
+    margin-bottom: 30px;
+  }
+  .detail_content .product_title {
+    margin-top: 60px;
+  }
+  .part_modal {
+    padding-top: 100px;
+  }
+  .section_1 {
+    padding: 68px 0 85px;
+  }
+  .section_title {
+    font-size: 42px;
+    padding-top: 8px;
+    margin-bottom: 34px;
+  }
+  .header_section .text-content {
+    padding-left: 70px;
+  }
+
+  .completed-builds .section_1 .section_title {
+    margin-left: 0;
+  }
+  .completed-builds .product_detail_main .swiper-fullscreen {
+    display: none;
+  }
+
+  /*------------- Build Now Page -------------*/
+
+  .build_now {
+    padding-top: 120px;
+    height: 100%;
+  }
+  .build_now .build-now-img {
+    margin-top: 80px;
+  }
+
+  .build_drone .container {
+    max-width: 100% !important;
+  }
+  .build_drone .col-xl-9 {
+    padding-top: 40px;
+  }
+  .build_drone .browse_product_main .browse-container {
+    padding: 0;
+  }
+  .build_drone .browse_product_main .product_icon {
+    margin-right: 0;
+    width: 65px;
+    height: 65px;
+    padding-top: 7px;
+  }
+  .build_drone .browse_product_main .product_detail {
+    width: 65px;
+    height: 65px;
+    padding: 10px 10px;
+  }
+  .build_drone .browse_product_main .column_1 {
+    width: 65%;
+  }
+  .build_drone .browse_product_main .column_2 {
+    width: 17.5%;
+  }
+  .build_drone .browse_product_main .column_4 {
+    width: 17.5%;
+  }
+  .build_drone .browse_product_main .column_1_total {
+    width: 65%;
+  }
+  .build_drone .browse_product_main .column_2_total {
+    width: 17.5%;
+  }
+  .build_drone .browse_product_main .column_4_total {
+    width: 17.5%;
+  }
+
+  .saved_drones {
+    height: 100%;
+  }
+  .saved_drones .fpv-drones {
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+  .saved_drones .fpv-drones .col-lg-4 {
+    margin-top: 40px;
+  }
+  .saved_drones .fpv-drones .row {
+    margin-top: 0 !important;
+  }
+  .saved_drones .drone-box i {
+    margin-left: 20px;
+  }
+
+  .drone_parts .drone-social {
+    justify-content: flex-start !important;
+  }
+  .drone_parts .social-box {
+    margin: auto 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .completed-builds .product_detail_main .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .custom_parts .form-group .battery {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header_section .hero_title {
+    font-size: 46px;
+    line-height: 46px;
+  }
+  .header_section .text-content {
+    padding: 100px 0;
+    padding-left: 40px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+  .how_it_works .section_title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .section_title {
+    font-size: 35px;
+  }
+  .drone_info_box .para {
+    line-height: 18px;
+    margin: 0;
+  }
+  .drone_section .name {
+    font-size: 30px;
+  }
+  .drone_section .drone_info {
+    padding-left: 0;
+  }
+  .product_header .hero_title {
+    font-size: 35px;
+    padding-top: 5px;
+  }
+  .find_product .product_detail,
+  .find_product .header {
+    width: 800px;
+  }
+  .part_modal .find_product {
+    width: 100%;
+    overflow: scroll;
+  }
+  .find_product .product_detail .buy_now {
+    white-space: pre;
+    font-size: 12px;
+  }
+  .header_section .text-content {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .completed-builds .fpv-description .nav-tabs .nav-link h4 {
+    font-size: 14px;
+  }
+  .completed-builds .product_detail_main .container {
+    max-width: 100% !important;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .browse-container {
+    padding: 0;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .header
+    .column_1 {
+    width: 47%;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .find_product
+    .column_1 {
+    width: 60%;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .find_product
+    .column_2 {
+    padding: 5px;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .find_product
+    .column_3 {
+    padding: 5px;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .find_product
+    .column_4 {
+    padding: 5px;
+  }
+  .completed-builds .product_detail_main .browse_product_main .product_icon {
+    margin-right: 0;
+    width: auto;
+    height: 68px;
+    padding: 8px;
+  }
+  .completed-builds .product_detail_main .find_product .product_detail {
+    padding: 10px 10px;
+    height: 68px;
+  }
+  .completed-builds .product_detail_main .find_product .product_detail .title {
+    font-size: 11px;
+  }
+  .completed-builds
+    .product_detail_main
+    .find_product
+    .product_detail
+    .close_box {
+    margin-left: 20%;
+  }
+  .completed-builds .product_detail_main .browse_product_main .buy_now {
+    width: 80%;
+  }
+
+  .build_now {
+    height: 100%;
+    padding-top: 80px;
+  }
+
+  .build_drone .social-box {
+    width: 90%;
+  }
+
+  .drone_parts .row h2 {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  .drone_parts .social-box {
+    width: 50%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  nav .right_content {
+    display: none !important;
+  }
+  nav .navbar-brand {
+    padding-left: 18px;
+  }
+  .product_detail_main .product_table .col {
+    justify-content: end !important;
+  }
+  .product_table .buy_now {
+    display: none;
+  }
+  .product_table .product_detail {
+    padding: 12px 18px;
+  }
+  .custom_parts .drone_catagory.label_outline label {
+    width: 100% !important;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .custom_parts .swiper_btns {
+    right: 30px;
+  }
+  .custom_parts .drone_catagory {
+    flex-direction: column;
+  }
+
+  .browse-products .fpv-browse .fpv-filter {
+    margin-top: 20px;
+  }
+
+  .completed-builds .fpv-description .nav-tabs .nav-link h4 {
+    font-size: 14px;
+  }
+  .completed-builds .product_detail_main .container {
+    max-width: 100% !important;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .browse-container {
+    padding: 0;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .header
+    .column_1 {
+    width: 47%;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .find_product
+    .column_1 {
+    width: 60%;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .find_product
+    .column_2 {
+    padding: 5px;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .find_product
+    .column_3 {
+    padding: 5px;
+  }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .find_product
+    .column_4 {
+    padding: 5px;
+  }
+  .completed-builds .product_detail_main .browse_product_main .product_icon {
+    margin-right: 0;
+    width: auto;
+    height: 68px;
+    padding: 8px;
+  }
+  .completed-builds .product_detail_main .find_product .product_detail {
+    padding: 10px 10px;
+    height: 68px;
+  }
+  .completed-builds .product_detail_main .find_product .product_detail .title {
+    font-size: 11px;
+  }
+  .completed-builds .product_detail_main .browse_product_main .buy_now {
+    width: 100%;
+  }
+
+  .build_drone .container {
+    padding: 0;
+  }
+  .build_drone .browse_product_main h2 {
+    font-size: 15px !important;
+  }
+  .build_drone .browse_product_main .buy_now {
+    margin-right: 0;
+  }
+  .build_drone .social-box {
+    width: 90%;
+  }
+
+  .saved_drones .fpv-drones {
+    padding-top: 40px;
+  }
+
+  .drone_parts .row h2 {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  .drone_parts .social-box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 414px) {
+  .product_table .product_detail {
+    padding: 12px 7px;
+  }
+  .product_table .caption {
+    font-size: 10px;
+  }
+  .product_table h3 {
+    font-size: 12px;
+  }
+  .product_detail_main .product_table .col_5 {
+    display: none !important;
+  }
+}
+
+/* ----------------------------------------------------------------
+	Retina CSS
+-----------------------------------------------------------------*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 991.98px),
+  only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 991.98px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 991.98px),
+  only screen and (min-device-pixel-ratio: 2) and (max-width: 991.98px),
+  only screen and (min-resolution: 192dpi) and (max-width: 991.98px),
+  only screen and (min-resolution: 2dppx) and (max-width: 991.98px) {
+}

@@ -1,0 +1,880 @@
+nav {
+  background-color: #1f1f1f;
+  height: 70px;
+}
+nav a {
+  color: #fff;
+  text-transform: uppercase;
+}
+nav .navbar-brand {
+  padding-left: 39px;
+  font-size: 25px;
+  font-weight: 600;
+}
+nav .nav-link {
+  font-size: 16px;
+  margin-right: 36px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+nav .nav-link i {
+  margin-right: 6px;
+  color: #fff;
+}
+nav .right_content .nav-link {
+  margin-right: 26px;
+}
+nav .right_content {
+  position: relative;
+  z-index: 9999;
+}
+/* header_section */
+
+.how_it_works {
+  padding: 100px 0;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+.how_it_works .section_title {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 600;
+  padding-top: 9px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.how_it_works .section_title::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  background-color: #3b18c6;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.how_it_works .step {
+  padding: 20px;
+}
+.how_it_works .head {
+  font-size: 20px;
+  margin: 14px 0 10px;
+}
+.drone_info_box {
+  padding: 100px 0;
+}
+.drone_info_box .section_title {
+  font-size: 60px;
+  padding-top: 13px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.drone_info_box .section_title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 85px;
+  background-color: #3b18c6;
+}
+.drone_info_box .para {
+  color: #898989;
+  line-height: 5px;
+}
+.drone_info_box .text-content {
+  margin-bottom: 63px;
+}
+.drone_section {
+  padding: 12px 0;
+  margin-bottom: 100px;
+}
+.drone_section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 0;
+}
+.drone_section.bg_blue_grad::after {
+  left: 0;
+  background: linear-gradient(104.6deg, #1562b6 0.99%, #3b18c6 92.86%);
+}
+.drone_section .drone_info {
+  padding-top: 45px;
+  padding-left: 40px;
+}
+.drone_section .caption {
+  font-size: 16px;
+  color: #3b18c6;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.drone_section.bg_blue_grad,
+.drone_section.bg_blue_grad a,
+.drone_section.bg_blue_grad span {
+  color: #ffff !important;
+}
+.drone_section .name {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 9px 0 25px;
+}
+.drone_info {
+  padding-bottom: 40px;
+}
+.drone_info .des {
+  line-height: 120%;
+  color: #898989;
+}
+.drone_section.bg_blue_grad .des {
+  color: #cccccc;
+}
+.drone_info .drone_features .row > div {
+  margin-top: 29px;
+}
+.drone_info .drone_features img {
+  margin-right: 22px;
+}
+.drone_info .drone_features h4 {
+  color: #777777;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.bg_blue_grad .drone_features h4 {
+  color: #cccccc;
+}
+.drone_info .drone_features p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+.bg_blue_grad .drone_features p {
+  color: #fff;
+}
+.drone_info .view_detail {
+  display: block;
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #3b18c6;
+  font-size: 20px;
+}
+.drone_info .view_detail i {
+  margin-left: 10px;
+  transition: 0.2s;
+}
+.drone_info .view_detail:hover i {
+  margin-left: 15px;
+}
+
+/* custom drone pages styling start from here */
+.custom_parts .row {
+  min-height: calc(100vh - 70px);
+}
+.custom_parts .drone_catagory input {
+  display: none;
+}
+.custom_parts .drone_catagory {
+  padding-right: 100px;
+}
+.custom_parts .drone_catagory.outline_sm {
+  padding-right: 0;
+}
+.custom_parts .drone_catagory label {
+  /* background-color: red; */
+  margin-right: 40px;
+  padding: 8px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  transition: 0.2s;
+  position: relative;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 39px;
+  /* min-width: 243px;
+    min-height: 243px; */
+}
+.custom_parts .drone_catagory.outline_sm label {
+  margin-bottom: 0;
+}
+.custom_parts .drone_catagory label h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.drone_catagory.outline_sm label h2 {
+  font-size: 40px;
+}
+.custom_parts .drone_catagory input:checked + label {
+  background-color: #fff;
+}
+.custom_parts .drone_catagory.label_outline label {
+  width: 243px;
+  height: 243px;
+}
+.custom_parts .label_outline.outline_sm label {
+  width: 185px;
+  height: 185px;
+}
+.custom_parts .drone_catagory.outline_sm label::before {
+  top: 2px !important;
+  right: 2px !important;
+  width: 30px;
+  height: 30px;
+}
+
+.drone_catagory.label_outline input:checked + label {
+  background-color: transparent;
+  padding: 0;
+  border: 2px solid #fff;
+}
+.drone_catagory.label_outline input:checked + label::before {
+  top: 0;
+  right: 0;
+}
+.custom_parts .drone_catagory .title {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  font-size: 15px;
+}
+
+/*  css modified here */
+
+.custom_parts input {
+  width: 22px;
+  height: 22px;
+}
+
+.custom_parts input + label .option {
+  width: 18px;
+  height: 18px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-right: 6px;
+  transition: 0.2s;
+}
+.custom_parts input:checked + label .option {
+  background-color: #000;
+  border: none;
+}
+.custom_parts .drone_catagory label::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 45px;
+  height: 45px;
+  background-image: url(/img/checked.png);
+  background-size: cover;
+  opacity: 0;
+  transition: 0.2s;
+}
+.custom_parts .drone_catagory input:checked + label::before {
+  opacity: 1;
+}
+.custom_parts .part_caption {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.custom_parts .left_content .content {
+  padding: 20px 150px;
+}
+.custom_parts .right_content {
+  background-color: #f0f1f2;
+}
+.custom_parts .right_content .heading {
+  font-size: 40px;
+  font-weight: 600;
+}
+.custom_parts .right_content .para {
+  color: #898989;
+  line-height: 120%;
+}
+.custom_parts .right_content .content {
+  padding: 40px;
+}
+.custom_parts .swiper_btns {
+  position: absolute;
+  right: 80px;
+  top: 30px;
+}
+.custom_parts .swiper_btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 50%);
+  color: #fff;
+  font-size: 22px;
+  margin-left: 8px !important;
+}
+.find_product {
+  margin-top: 35px;
+}
+.find_product .column_1 {
+  width: 60%;
+}
+.find_product .column_2 {
+  width: 18%;
+}
+.find_product .column_3 {
+  width: 18%;
+}
+.find_product .column_4 {
+  width: 11%;
+}
+.find_product .title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #fff;
+}
+.find_product .header {
+  padding-left: 30px;
+}
+.find_product .product_detail {
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 15%);
+  border: 1px solid #e1e1e121;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.find_product .product_detail.active {
+  background-color: rgba(0, 0, 0, 35%);
+  border: 1px solid #e5e5e5;
+}
+.find_product .product_detail .title {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 14px !important;
+  text-align: left;
+}
+.find_product .price {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.find_product .caption {
+  font-size: 12px;
+}
+.find_product .product_detail .buy_now {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 15px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+}
+.find_product .product_detail .close_box {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+.product_detail label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin-right: 20px;
+  color: #000;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .product_detail input {
+  display: none;
+} */
+.product_detail label i {
+  visibility: hidden;
+}
+.product_detail input:checked + label {
+  background-color: #fff;
+}
+.product_detail input:checked + label i {
+  visibility: visible;
+}
+.right_content .product_checkout {
+  margin-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #cccccc;
+}
+.product_checkout .name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: #000;
+}
+.product_checkout .product_des {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 500;
+  line-height: 110%;
+  margin: 11px 0;
+}
+.product_checkout .price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+.product_checkout .btn {
+  font-size: 14px;
+  padding: 10px 11px;
+  border-radius: 5px;
+  margin-left: 25px;
+  background-color: #000;
+  color: #fff;
+}
+.right_content .main_content {
+  min-height: 70vh;
+}
+.right_content .total_price {
+  margin-top: 20px;
+  padding: 14px 15px;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+/* custom drone pages styling end here */
+
+/* browse product  */
+.product_header {
+  padding: 50px 0 60px;
+  background-color: #1f1f1f;
+}
+.product_header .hero_title {
+  font-size: 60px;
+  font-weight: 600;
+  position: relative;
+  padding-top: 10px;
+}
+.product_header .hero_title::before {
+  content: '';
+  width: 70px;
+  height: 5px;
+  position: absolute;
+  background-color: #3b18c6;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.browse_product_main {
+  background-color: #f0f1f2;
+  padding: 80px 0;
+}
+.text-dark {
+  color: #000 !important;
+}
+.browse_product_main .find_product .product_detail {
+  background-color: #fff;
+}
+.browse_product_main .product_icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 3px;
+  margin-right: 13px;
+  padding-top: 15px;
+  text-align: center;
+}
+.browse_product_main .product_icon .name {
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 6px;
+}
+.browse_product_main .header .title {
+  padding-left: 30px;
+}
+.browse_product_main .product_detail {
+  height: 88px;
+}
+.browse_product_main .find_product .caption {
+  font-weight: 500;
+}
+
+/* product detail page styling  */
+.product_detail_main {
+  padding: 72px 0 60px;
+  background-color: #f0f1f2;
+}
+.detail_content .product_title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 13px;
+}
+.detail_content .reviews .rating {
+  font-size: 16px;
+  color: #777777;
+}
+.product_detail_main .product_table {
+  margin-top: 33px;
+  margin-bottom: 70px;
+}
+.product_detail_main .product_table .col {
+  width: 20%;
+  text-align: center;
+}
+.product_detail_main .product_table .header {
+  padding: 7px 22px;
+  background-color: #e3e3e3;
+}
+.product_table h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7777;
+  margin: 0;
+}
+.product_table .product_detail {
+  padding: 12px 16px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 16px;
+}
+.product_table .price {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.product_table .caption {
+  font-size: 12px;
+  font-weight: 500;
+}
+.product_table .buy_now {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5px;
+  padding: 6px 10px;
+  margin-left: 20%;
+}
+.product_detail_main .text-content {
+  margin-bottom: 40px;
+}
+.product_detail_main .text-content .heading {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.product_detail_main .text-content .paragraph,
+.specification p {
+  color: #777777;
+  line-height: 120%;
+}
+
+.custom_parts .swiper_btns {
+  position: absolute;
+  right: 20px;
+  /* right: 80px; */
+  top: 30px;
+}
+.custom_parts .swiper_btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 50%);
+  color: #fff;
+  font-size: 22px;
+  margin-left: 8px !important;
+}
+.product_detail_main .swiper-button-next {
+  position: absolute;
+  width: 35px;
+  top: 45%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  background: url('/icons/icons8-chevron-right-24.png') no-repeat center;
+  background-color: rgba(0, 0, 0, 60%);
+  color: #fff;
+}
+
+.product_detail_main .swiper-button-prev {
+  position: absolute;
+  width: 35px;
+  top: 45%;
+  left: 45px;
+  /* transform: translateX(-50%); */
+  z-index: 99999;
+  background: url('/icons/icons8-chevron-left-24.png') no-repeat center;
+  background-color: rgba(0, 0, 0, 60%);
+  color: #fff;
+}
+
+.product_detail_main .swiper_btn {
+  position: absolute;
+  top: 45%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 60%);
+  color: #fff;
+}
+.product_detail_main .swiper_btn.btn_next {
+  left: 10%;
+}
+.product_detail_main .swiper_btn.btn_prev {
+  right: -1%;
+}
+.product_detail_main .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #e1e1e1;
+  width: 100%;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 90px 0;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+footer .social_link {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 15px;
+  transition: 0.2s;
+}
+footer .social_link:hover {
+  transform: scale(1.1);
+}
+footer .section_title {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 95%;
+}
+footer .section_title i {
+  margin-top: 16px;
+  margin-left: 12px;
+  transform: rotate(90deg);
+}
+footer .caption {
+  font-size: 16px;
+  color: #898989;
+  font-weight: 400;
+}
+footer .subscribe_newlatter .input {
+  height: 68px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: none;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  margin-top: 13px;
+}
+footer .input input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+}
+footer .head {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+footer .link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #898989;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 12px;
+  transition: 0.2s;
+}
+footer .link:hover {
+  transform: translateX(5px);
+  color: #fff;
+}
+footer .copyright {
+  margin-top: 100px;
+}
+footer .copyright_txt {
+  font-size: 15px;
+  color: #898989;
+}
+
+/* css changes for react */
+
+p.title a {
+  color: #fff;
+}
+
+/* New swiper button  */
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 8%;
+  width: 40px;
+  left: 64.5%;
+  height: 40px;
+  transform: translateX(-50%);
+  z-index: 99999;
+  background: url('/icons/icons8-chevron-left-24.png') no-repeat center;
+  background-color: rgba(0, 0, 0, 60%);
+  color: #fff;
+}
+
+.swiper-button-next {
+  position: absolute;
+  width: 40px;
+  top: 8%;
+  right: 29%;
+  height: 40px;
+  transform: translateX(-50%);
+  z-index: 99999;
+  background: url('/icons/icons8-chevron-right-24.png') no-repeat center;
+  background-color: rgba(0, 0, 0, 60%);
+  color: #fff;
+}
+
+.part_modal.w-100.input-form {
+  margin-top: 6em;
+}
+
+/* =====================XX========================Custom Parts Tooltip==================XX==================== */
+
+.tooltip-opacity {
+  opacity: 1;
+  display: block !important;
+}
+.custom_parts .mb-10 {
+  margin-bottom: 10px;
+}
+
+.custom_parts .grey-dark {
+  color: #777777;
+}
+.custom_parts .battery-option {
+  position: relative;
+}
+.custom_parts .tooltip {
+  opacity: 1;
+  position: absolute;
+  background: #1f1f1f;
+  padding: 25px;
+  width: 350px;
+  top: -8rem;
+}
+.custom_parts .tooltip::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0px;
+  left: 0;
+  top: 10%;
+  border: 15px solid transparent;
+  border-left: 0;
+  border-right: 15px solid #1f1f1f;
+  transform: translate(calc(-80% - 0px), -50%);
+}
+.custom_parts .tooltip-a {
+  display: none;
+  opacity: none;
+  left: 120%;
+  transition: 0.3s ease all;
+}
+.custom_parts .tooltip-b {
+  display: none;
+  opacity: none;
+  left: 120%;
+  transition: 0.3s ease all;
+}
+.custom_parts .battery-a:hover .tooltip-a {
+  display: block;
+  opacity: 1;
+}
+.custom_parts .battery-b:hover .tooltip-b {
+  display: block;
+  opacity: 1;
+}
+.custom_parts .tooltip .tooltip-item {
+  display: flex;
+  align-items: center;
+}
+.custom_parts .tooltip .tooltip-list {
+  padding: 0;
+}
+.custom_parts .tooltip .tooltip-point {
+  margin-bottom: 10px !important;
+}
+.custom_parts .tooltip .tooltip-point::before {
+  content: '';
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  background: #3b18c6;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.custom_parts input + label .option-2 {
+  width: auto;
+  height: 18px;
+  padding: 5px;
+  margin-left: 4.7rem;
+}
+
+.custom_parts .offwhite {
+  color: rgba(252, 252, 252, 0.4);
+}
+.custom_parts .coming-soon {
+  border: none !important;
+  background-color: rgba(217, 217, 217, 0.5) !important;
+}
+.custom_parts .coming-soon-title {
+  margin-bottom: 30px;
+}
+.custom_parts .custom-border {
+  position: absolute;
+  bottom: 23%;
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+
+/* =====================XX========================Browse Products Page==================XX==================== */
