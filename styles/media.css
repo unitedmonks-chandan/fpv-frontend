@@ -629,6 +629,7 @@
   }
 }
 
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .completed-builds .product_detail_main .container {
     max-width: 100% !important;
@@ -636,6 +637,7 @@
 }
 
 @media (max-width: 800px) {
+ 
   .custom_parts .form-group .battery {
     display: none;
   }
@@ -722,6 +724,13 @@
   
 }
 @media (max-width: 640px) {
+    .completed-builds .product_detail_main .container {
+    max-width: 100% !important;
+    padding: 0 10px;
+}
+   .find_product .product_detail .title{
+    font-size:9px !important;
+  }
   .section_1 .swiper{
     padding: 0 !important;
   }
@@ -745,9 +754,8 @@
   .completed-builds .fpv-description .nav-tabs .nav-link h4 {
     font-size: 14px;
   }
-  .completed-builds .product_detail_main .container {
-    max-width: 100% !important;
-  }
+
+
   .completed-builds
     .product_detail_main
     .browse_product_main

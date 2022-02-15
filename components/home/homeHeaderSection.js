@@ -160,6 +160,22 @@ const HomeHeaderSection = () => {
           opacity: 0;
           transform: scale(0.5, 0.5);
         }
+@media (max-width: 980px) {
+  .header_section{
+    height:100%;
+  }
+  .header_section video{
+    height:100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .header_section{
+    height:93vh;
+  }
+  .header_section video{
+    height:93vh !important;
+  }
+}
       `}</style>
     </div>
   )

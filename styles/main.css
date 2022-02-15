@@ -785,6 +785,13 @@ p.title a {
   background: url('/icons/icons8-chevron-left-24.png') no-repeat center;
   background-color: rgba(0, 0, 0, 40%);
 }
+.product_detail_main .swiper-button-prev{
+  width: 50px;
+  height: 50px;
+  left:25px !important;
+  background: url('/icons/icons8-chevron-left-24.png') no-repeat center;
+  background-color: rgba(0, 0, 0, 40%);
+}
 
 .swiper-button-prev {
   position: absolute;
@@ -814,6 +821,15 @@ p.title a {
   background: url('/icons/icons8-chevron-right-24.png') no-repeat center;
   background-color: rgba(0, 0, 0, 40%);
 }
+
+.product_detail_main .swiper-button-next{
+  width: 50px;
+  height: 50px;
+  right: -25px !important;
+  background: url('/icons/icons8-chevron-right-24.png') no-repeat center;
+  background-color: rgba(0, 0, 0, 40%);
+}
+
 .swiper-button-next {
   position: absolute;
   width: 40px;
