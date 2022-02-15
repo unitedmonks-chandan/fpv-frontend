@@ -529,6 +529,9 @@ nav .right_content {
   color: #fff;
   margin-top: 6px;
 }
+.completed-builds .browse_product_main .product_icon .name {
+   font-size: 9px !important;
+}
 .browse_product_main .header .title {
   padding-left: 30px;
 }

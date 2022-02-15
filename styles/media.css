@@ -24,8 +24,14 @@
 }
 
 @media (max-width: 1440px) {
-  h2{
+  .section_1 .section_title{
     font-size: 50px !important;
+  }
+  .section_2 .text_content h2{
+    font-size: 50px !important;
+  }
+  .drone_info_box .section_title{
+     font-size: 50px !important;
   }
   .drone_section h2{
     font-size: 42px !important;
@@ -181,6 +187,15 @@
 }
 
 @media (max-width: 1366px) {
+  .section_1 .section_title{
+    font-size: 42px !important;
+  }
+  .section_2 .text_content h2{
+    font-size: 42px !important;
+  }
+  .drone_info_box .section_title{
+     font-size: 42px !important;
+  }
     .section_1 .swiper-button-next{
       width: 40px;
       height: 40px;
@@ -282,9 +297,6 @@
 @media (max-width: 1199.98px) {
   .navbar-nav{
     margin-left: 0 !important;
-  }
-   h2{
-    font-size: 42px !important;
   }
   .drone_section h2{
     font-size: 35px !important;
@@ -705,7 +717,7 @@
   }
   .find_product .product_detail .buy_now {
     white-space: pre;
-    font-size: 12px;
+    font-size: 11px;
   }
   
 }
@@ -779,10 +791,13 @@
   }
   .completed-builds .product_detail_main .browse_product_main .product_icon {
     margin-right: 0;
-    width: auto;
+    width: 68px;
     height: 68px;
     padding: 8px;
   }
+  .completed-builds .browse_product_main .product_icon .name {
+  font-size: 7px !important;
+}
   .completed-builds .product_detail_main .find_product .product_detail {
     padding: 10px 10px;
     height: 68px;
@@ -798,7 +813,7 @@
     margin-left: 20%;
   }
   .completed-builds .product_detail_main .browse_product_main .buy_now {
-    width: 80%;
+    width: 100%;
   }
 
   .build_now {
@@ -949,20 +964,19 @@
   }
   .completed-builds .product_detail_main .browse_product_main .product_icon {
     margin-right: 0;
-    width: auto;
+    width: 68px;
     height: 68px;
     padding: 8px;
   }
   .completed-builds .product_detail_main .find_product .product_detail {
-    padding: 10px 10px;
     height: 68px;
   }
   .completed-builds .product_detail_main .find_product .product_detail .title {
     font-size: 11px;
   }
-  .completed-builds .product_detail_main .browse_product_main .buy_now {
-    width: 100%;
-  }
+   .completed-builds .browse_product_main .product_icon .name {
+  font-size: 7px !important;
+}
 
   .build_drone .container {
     padding: 0;

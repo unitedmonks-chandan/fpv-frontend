@@ -245,7 +245,7 @@ export default function droneParts({ data }) {
               </div>
             </div>
           </div>
-          <div className="fpv-description bg-grey">
+          <div className="fpv-description bg-grey" style={{display:'none'}}>
             <div className="container">
               <ul className="nav nav-tabs">
                 <li className="nav-item active">
@@ -656,7 +656,6 @@ export default function droneParts({ data }) {
           .drone_parts .social-box {
             width: 50%;
           }
-        }
       `}</style>
     </Layout>
   )
