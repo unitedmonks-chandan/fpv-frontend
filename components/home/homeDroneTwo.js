@@ -17,7 +17,7 @@ const HomeDroneTwo = () => {
       <div className="drone_section bg_blue_grad position-relative">
         <div className="container">
           <div className="content">
-            <div className="row align-items-center">
+            <div className="row align-items-center drone-reverse">
               <div className="col-lg-5">
                 <div className="drone_info">
                   <span className="caption">RACING DRONE</span>

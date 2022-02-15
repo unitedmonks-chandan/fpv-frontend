@@ -8,7 +8,8 @@ const HomeDroneParts = () => {
   const [products, setProducts] = useState([])
   useEffect(() => {
     async function getAllCategories() {
-      await allCategories().then((res) => setCategories(res))
+      let res = await allCategories() 
+      setCategories(res)
     }
     async function getAllHomeParts() {
       await getHomeParts().then((res) => {
@@ -23,8 +24,8 @@ const HomeDroneParts = () => {
   const Parts = ({ categories, products }) => {
     return (
       categories &&
-      categories?.map((category, key) => (
-        <div className="col-md-6 overflow-hidden" key={key}>
+      categories.map((category, key) => (
+        <div className="col-lg-6" key={key}>
           <div className="parts d-flex justify-content-between align-items-center">
             <h3 className="m-0">{category.name?.name}</h3>
             <div className="img">
@@ -33,12 +34,10 @@ const HomeDroneParts = () => {
                   product.category._id === category._id && (
                     <Link href={`/products/${product._id}`}>
                       <a>
-                        <img
+                        <img className="part-img"
                           src={product.featuredImage?.url}
                           alt="box"
                           key={key}
-                          width={70}
-                          height={70}
                         />
                       </a>
                     </Link>
@@ -46,6 +45,33 @@ const HomeDroneParts = () => {
               )}
             </div>
           </div>
+          <style jsx>{`
+          .parts {
+          height:110px;
+          border-bottom: 1px solid #454545;
+          cursor: pointer;
+          overflow: hidden;
+          position:relative;
+        }
+        .parts h3 {
+          font-size: 25px;
+          transition: 0.4s;
+        }
+        .parts .img {
+          transform: translateX(75px);
+          transition: 0.4s;
+          display:flex;
+          flex-wrap:nowrap;
+          align-items:center;
+        }
+        .parts:hover .img {
+          transform: translateX(0px);
+        }
+        .parts .part-img{
+          width:76px;
+          padding:0 3px;
+        }
+          `}</style>
         </div>
       ))
     )
@@ -76,27 +102,18 @@ const HomeDroneParts = () => {
           color: #fff;
         }
         .parts_drone .text-content {
+          position:relative;
           margin-bottom: 75px;
         }
-        .parts_drone .parts {
-          padding-bottom: 18px;
-          border-bottom: 1px solid #454545;
-          margin-bottom: 20px;
-          cursor: pointer;
-        }
-        .parts_drone .parts h3 {
-          font-size: 25px;
-          transition: 0.4s;
-        }
-        .parts_drone .parts:hover h3 {
-          font-style: italic;
-        }
-        .parts_drone .parts .img {
-          transform: translateX(82px);
-          transition: 0.4s;
-        }
-        .parts_drone .parts:hover .img {
-          transform: translateX(0px);
+        .parts_drone .section_title::before{
+          display:block;
+          content:'';
+          background: #3b18c6;
+          height:5px;
+          width:85px;
+          top:0;
+          margin: 0 auto;
+          margin-bottom:20px;
         }
         .parts_drone .btns {
           margin-top: 60px;

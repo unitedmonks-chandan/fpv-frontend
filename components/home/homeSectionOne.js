@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation } from 'swiper'
 import 'swiper/css'
-// import 'swiper/css/navigation'
-// SwiperCore.use([Navigation])
+import 'swiper/css/navigation'
+SwiperCore.use([Navigation])
 
 const HomeSectionOne = () => {
   return (
@@ -13,18 +13,31 @@ const HomeSectionOne = () => {
         <div className="container-fluid">
           <div className="content">
             <div className="row align-items-center">
-              <div className="col-lg-4 ps-5">
+              <div className="col-xl-4 slider-title">
                 <h2 className="section_title position-relative">
                   What do you want to do today?
                 </h2>
               </div>
-              <div className="col-lg-8">
+              <div className="col-xl-8">
                 <div className="slider_content ps-lg-5">
                   {/* <!-- Swiper --> */}
 
                   <div className="swiper mySwiper">
                     <div className="swiper-wrapper">
-                      <Swiper slidesPerView={3} navigation={true} loop={true}>
+                      <Swiper breakpoints={{
+                 // when window width is >= 800px
+                      980: {
+                      slidesPerView: 3,
+                      },
+                // when window width is >= 640px
+                       640: {
+                       slidesPerView: 2,
+                        },
+                // when window width is >= 640px
+                       480: {
+                       slidesPerView: 1,
+                        },
+  }} className="swiper-main" spaceBetween={30} slidesPerView={1} navigation={true}>
                         <SwiperSlide>
                           <div className="swiper-slide position-relative">
                             <div className="content">
@@ -120,6 +133,12 @@ const HomeSectionOne = () => {
         .section_1 {
           padding: 100px 0 120px;
         }
+        .section_1 .container-fluid{
+          padding:0;
+        }
+        .section_1 .slider-title{
+          padding-left:5rem;
+        }
         .section_1 .swiper_btn {
           width: 50px;
           height: 50px;
@@ -129,6 +148,9 @@ const HomeSectionOne = () => {
           align-items: center;
           justify-content: center;
           background-color: rgba(255, 255, 255, 0.7);
+        }
+        .swiper-main .swiper-button-next{
+          width:50px;
         }
         .section_1 swiper-button-prev {
           transform: rotate(180deg);
@@ -149,9 +171,6 @@ const HomeSectionOne = () => {
           width: 100%;
           height: 100%;
           background-color: rgba(0, 0, 0, 0.5);
-        }
-        .section_1 .swiper-slide {
-          width: 280px;
         }
         .section_1 .swiper-slide .footer {
           position: absolute;
@@ -198,9 +217,6 @@ const HomeSectionOne = () => {
           height: 100%;
           background-color: rgba(0, 0, 0, 0.5);
         }
-        .section_1 .swiper-slide {
-          width: 280px;
-        }
         .section_1 .swiper-slide .footer {
           position: absolute;
           width: 100%;
@@ -235,6 +251,9 @@ const HomeSectionOne = () => {
           background-color: #3b18c6;
         }
         .section_1 .section_title {
+          line-height:.9;
+          font-size:60px;
+          font-weight:600;
           padding-top: 23px;
         }
       `}</style>

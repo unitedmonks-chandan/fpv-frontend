@@ -9,12 +9,11 @@ const HomeSectionTwo = () => {
           <div className="content">
             <div className="row align-items-stretch">
               <div className="col-lg-8 p-0">
-                <div className="video_section">
-                  <video
-                    autoPlay={true}
-                    muted=""
-                    className="h-100"
-                    loop={true}
+                <div>
+                  <video className="video_section"
+                    autoPlay
+                    muted
+                    loop
                     id="myVideo"
                   >
                     <source src="img/demo_video_2.mp4" type="video/mp4" />
@@ -26,7 +25,7 @@ const HomeSectionTwo = () => {
               </div>
               <div className="col-lg-4 p-0">
                 <div className="text_content">
-                  <h2>Build your dream drone today?</h2>
+                  <h2>Build Your Dream Drone Today?</h2>
                   <p className="para">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque sapien velit, aliquet eget commodo nec, auctor a
@@ -44,6 +43,17 @@ const HomeSectionTwo = () => {
         </div>
       </div>
       <style jsx>{`
+        .section_2{
+          position:relative;
+          line-height:0;
+        }
+        .section_2 .text_content h2{
+          line-height:1;
+        }
+          .section_2 .video_section {
+           width: 100%;
+           overflow: hidden;
+          }
         .how_it_works .section_title {
           font-size: 60px;
           color: #fff;
@@ -90,9 +100,9 @@ const HomeSectionTwo = () => {
           width: 85px;
           background-color: #3b18c6;
         }
-        .drone_info_box .para {
+        .section_2 .text_content .para {
           color: #898989;
-          line-height: 5px;
+          width:90%;
         }
         .drone_info_box .text-content {
           margin-bottom: 63px;
@@ -184,24 +194,25 @@ const HomeSectionTwo = () => {
         .drone_info .view_detail:hover i {
           margin-left: 15px;
         }
-        .section_2 .video_section {
-          height: 512px;
+        .section_2 .container-fluid{
+          padding:0;
         }
         .section_2 .text_content {
           background-color: #1f1f1f;
           color: #fff;
           padding: 85px;
-          height: 100%;
+          height:100%;
+          line-height:1.3;
         }
         .section_2 .text_content h2 {
-          font-size: 70px;
+          font-size: 60px;
           font-weight: 600;
           margin-bottom: 28px;
         }
         .section_2 .text_content p {
           font-size: 20px;
           color: #898989;
-          margin-bottom: 130px;
+          margin-bottom: 250px;
         }
       `}</style>
     </div>

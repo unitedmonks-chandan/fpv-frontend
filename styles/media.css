@@ -6,32 +6,36 @@
   .custom_parts .left_content .content {
     padding: 20px 100px;
   }
+    .section_2 .text_content{
+      padding: 50px !important;
+    }
+    .section_2 .text_content p{
+      margin-bottom: 120px !important;
+    }
 }
 
 @media (min-width: 1450px) {
-  .section_2 .video_section {
-    height: 772px;
-    width: 100%;
-    overflow: hidden;
-  }
   /* .section_2 .video_section video{
 		width: 100%;
 	} */
 }
 
 @media (min-width: 991px) and (max-width: 1440px) {
-  .header_section {
-    height: calc(100vh - 69px);
-  }
-  .header_section .text-content {
-    padding: 85px 70px;
-  }
 }
 
 @media (max-width: 1440px) {
-  .header_section .text-content {
-    padding: 110px 100px;
+  h2{
+    font-size: 50px !important;
   }
+  .drone_section h2{
+    font-size: 42px !important;
+  }
+    .section_2 .text_content{
+      padding: 35px !important;
+    }
+    .section_2 .text_content p{
+      margin-bottom: 150px !important;
+    }
   .header_section .hero_title {
     font-size: 55px;
     line-height: 51px;
@@ -176,6 +180,32 @@
   }
 }
 
+@media (max-width: 1366px) {
+    .section_1 .swiper-button-next{
+      width: 40px;
+      height: 40px;
+      right: -20px !important;
+    }
+    .section_1 .swiper-button-prev{
+      width: 40px;
+      height: 40px;
+      left: 20px !important;
+    }
+    .our_blog .swiper-button-next{
+      width: 40px;
+      height: 40px;
+      right: -20px !important;
+    }
+    .our_blog .swiper-button-prev{
+      width: 40px;
+      height: 40px;
+      left: 20px !important;
+    }
+    .section_2 .text_content p{
+      margin-bottom: 130px !important;
+    }
+}
+
 @media (min-width: 1280px) and (max-width: 1366px) {
   .completed-builds
     .product_detail_main
@@ -231,9 +261,34 @@
   .custom_parts .swiper_btns {
     right: 40px;
   }
+  .header_section .hero_title{
+    font-size: 60px !important;
+  }
+  .header_section .text-outline{
+    font-size: 90px !important;
+  }
+  .header_section .hero_para{
+    width: 80%;
+  }
+  .header_section .hero_para br{
+    display: none;
+  }
+    .section_2 .text_content p{
+      font-size: 18px; 
+      margin-bottom: 60px !important;
+    }
 }
 
 @media (max-width: 1199.98px) {
+  .navbar-nav{
+    margin-left: 0 !important;
+  }
+   h2{
+    font-size: 42px !important;
+  }
+  .drone_section h2{
+    font-size: 35px !important;
+  }
   .navbar-collapse {
     position: fixed !important;
     z-index: 999999;
@@ -253,6 +308,7 @@
     color: #000;
     font-size: 25px;
     margin-top: 40px;
+    margin-right: 0 !important;
     text-align: center;
   }
   .close_popup {
@@ -344,6 +400,60 @@
   .drone_parts {
     height: 100%;
   }
+  .header_section::before{
+    background:none !important;
+  }
+  .header_section .row{
+    display: block;
+    padding-right: 0;
+  }
+  .header_section .header-overlay{
+    position: absolute;
+    height: 99%;
+  }
+  .header_section .text-content{
+    position: relative;
+    z-index: 20;
+    padding: 0 !important;
+    padding-top: 55px !important;
+    padding-left: 80px !important;
+    }
+    .header_section .blue-overlay{
+      background: rgba(21, 98, 182, .2);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 5;
+      top: 0;
+    }
+    .header_section .hero_title{
+      font-size: 50px !important;
+    }
+    .header_section .text-outline{
+      font-size: 70px !important;
+    }
+    .header_section .btn{
+      padding: 16px 20px !important;
+    }
+    .header_section .arrow_down{
+      z-index: 30;
+    }
+    .header_section .hero_para{
+    width: 50%;
+  }
+  .section_1 .slider_content{
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+  .section_1 .swiper{
+    padding-left: 0 !important;
+  }
+  .section_2 .text_content h2{
+    font-size: 30px !important;
+  }
+    .section_2 .text_content p{
+        font-size: 16px !important;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -364,6 +474,39 @@
   .header_section .btn {
     padding: 12px 25px;
     margin-bottom: 50px;
+  }
+  .our_blog .blog{
+    text-align: center;
+  }
+  .drone_section .drone-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .drone_section{
+    margin-bottom: 0;
+  }
+  .mt-70{
+    margin-top: 70px;
+  }
+  .section_2{
+    height: 100% !important;
+    line-height: 0 !important;
+  }
+  .section_2 .text_content{
+    line-height: 1 !important;
+    text-align: center;
+  }
+  .section_2 .text_content h2{
+    font-size: 42px !important;
+  }
+    .section_2 .text_content .para{
+      width: 100% !important;
+    }
+    .section_2 .row{
+      flex-direction: column-reverse;
+    }
+      .drone_info_box{
+    background: white !important;
   }
   .drone_section::after {
     width: 100%;
@@ -388,7 +531,10 @@
   .header_section .text-content {
     padding-left: 70px;
   }
-
+ .section_2 .btn-blue-grad{
+   display: inline-block !important;
+   padding: 20px 50px !important;
+ }
   .completed-builds .section_1 .section_title {
     margin-left: 0;
   }
@@ -481,16 +627,49 @@
   .custom_parts .form-group .battery {
     display: none;
   }
+  .header_section .text-content{
+    padding-top: 10px !important;
+  }
+  .section_1 .swiper-slide .footer .text{
+    font-size: 18px !important; 
+  }
 }
 
-@media (max-width: 767.98px) {
-  .header_section .hero_title {
-    font-size: 46px;
-    line-height: 46px;
+@media (max-width: 768px) {
+  .header_section .hero_title{
+    font-size: 40px !important;
+  }
+  .header_section .text-outline{
+    font-size: 55px !important;
+  }
+  .header_section .hero_para{
+    margin: 20px 0 !important;
+  }
+  .header_section .btn{
+    margin-bottom: 0;
+    padding: 15px !important;
   }
   .header_section .text-content {
-    padding: 100px 0;
-    padding-left: 40px;
+    padding-top: 40px !important;
+  }
+  .section_1 .slider-title{
+    padding-left: 7rem !important; 
+  }
+     .section_1{
+    padding: 60px 0 0 !important;
+  }
+  .parts h3{
+    font-size: 21px !important;
+  }
+  .drone_info_box{
+    padding: 60px 0;
+    padding-left: 4px !important;
+  }
+  .parts_drone{
+    padding: 60px 10px !important;
+  }
+  .our_blog{
+    padding: 60px;
   }
   .btn {
     font-size: 16px;
@@ -528,11 +707,28 @@
     white-space: pre;
     font-size: 12px;
   }
-  .header_section .text-content {
-    padding-left: 20px;
+  
+}
+@media (max-width: 640px) {
+  .section_1 .swiper{
+    padding: 0 !important;
+  }
+  .section_1 .swiper-slide .footer .text{
+    font-size: 21px !important;
+  }
+  .section_1 .slider-title{
+    padding-left: 0 !important;
+    margin: 0 auto !important;
+    width: 80%;
+  }
+  .header_section .arrow_down{
+    width: 55px !important;
+    height: 55px !important;
+  }
+  .parts_drone{
+    padding: 100px 10px !important;
   }
 }
-
 @media (min-width: 576px) and (max-width: 767.98px) {
   .completed-builds .fpv-description .nav-tabs .nav-link h4 {
     font-size: 14px;
@@ -621,9 +817,58 @@
   .drone_parts .social-box {
     width: 50%;
   }
+  .header_section .hero_title{
+    font-size: 30px !important;
+  }
+  .header_section .text-outline{
+    font-size: 40px !important;
+  }
+  .header_section .hero_para{
+    font-size: 16px !important;
+  }
+  .header_section .header-overlay{
+    height: 98% !important;
+  }
 }
 
 @media (max-width: 575.98px) {
+    .header_section .hero_title{
+    font-size: 30px !important;
+  }
+  .header_section .text-outline{
+    font-size: 40px !important;
+  }
+  .header_section .hero_para{
+    margin: 10px 0 !important;
+    font-size: 13px !important;
+  }
+  .header_section .btn{
+    margin-bottom: 0;
+    padding: 13px !important;
+    font-size: 13px !important;
+  }
+  .header_section .text-content {
+    padding-top: 15px !important;
+    padding-left: 50px !important;
+  }
+  .header_section .header-overlay{
+    height: 98% !important;
+  }
+  .swiper-container {
+    width: 480px;
+  }
+  .parts_drone .text-content{
+    margin-bottom: 0 !important;
+  }
+    .parts h3{
+    font-size: 17px !important;
+  }
+  .section_1 .section_title{
+    font-size: 38px !important;
+  }
+.section_2 .text_content{
+  padding: 50px !important;
+}
   nav .right_content {
     display: none !important;
   }

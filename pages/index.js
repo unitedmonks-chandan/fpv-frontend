@@ -5,8 +5,8 @@ import HomeSectionTwo from '../components/home/homeSectionTwo'
 import HomeDroneOne from '../components/home/homeDroneOne'
 import HomeDroneTwo from '../components/home/homeDroneTwo'
 import HomeDroneThree from '../components/home/homeDroneThree'
-import HomeBlogList from '../components/home/homeBlogList'
 import HomeDroneParts from '../components/home/homeDroneParts'
+import HomeBlogList from '../components/home/homeBlogList'
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <HomeSectionOne />
 
         {/* <!-- section 2 --> */}
-        {/* <HomeSectionTwo /> */}
+        <HomeSectionTwo /> 
 
         <div className="drone_info_box section bg_lightgrey">
           <div className="container">
@@ -38,12 +38,12 @@ export default function Home() {
           <HomeDroneThree />
 
           <div className="text-center content">
-            <div className="btn btn-blue-grad rounded">VIEW MORE PRODUCTS</div>
+            <div className="btn btn-blue-grad mt-70 rounded">VIEW MORE PRODUCTS</div>
           </div>
         </div>
 
         <HomeDroneParts />
-        {/* <HomeBlogList /> */}
+        <HomeBlogList />
       </Layout>
       <style jsx>{`
         .header_section {

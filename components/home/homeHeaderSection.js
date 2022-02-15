@@ -4,33 +4,32 @@ const HomeHeaderSection = () => {
   return (
     <div>
       <div className="header_section header section position-relative">
-        <div className="cash_back">
-          <img src="/img/cashback_badge.png" className="img-fluid" alt="img" />
-        </div>
         <div className="container-fluid">
           <div className="content">
             <div className="row">
-              <div className="col-lg-5">
+              <div className="col-xl-6 header-overlay">
                 <div className="text-content">
                   <h1 className="hero_title">
-                    Shop For Handmade & Custom
+                    Shop For <br/> Handmade & <br/>Custom
                     <span className="text-outline d-block">Drone</span>
                   </h1>
                   <p className="hero_para text-white">
-                    Check our interactive drone builder and find the best
+                    Check our interactive drone builder and find the best <br/>
                     compatiable parts.{' '}
                   </p>
                   <a href="#" className="btn bg_white shadow">
                     LET’S GET STARTED
                   </a>
                 </div>
+                <div className="blue-overlay"></div>
               </div>
-              <div className="col-lg-7 p-0 ps-lg-5">
+              <div className="col-xl-6 p-0 header-video">
                 <div className="video h-100">
                   <video
-                    autoPlay={true}
-                    muted=""
-                    loop=""
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
                     id="header_video"
                     className="h-100"
                   >
@@ -56,12 +55,26 @@ const HomeHeaderSection = () => {
           z-index: 9;
         }
         .header_section {
-          overflow: hidden;
+          width:100%;
+          height:93vh;
         }
-
+        .header_section .row{
+          position:relative;
+        }
+         .header_section .container-fluid{
+           padding:0;
+         }
+         .header_section .header-overlay{
+           display: flex;
+           align-items: center;
+           padding:0;
+         }
         .header_section .text-content {
-          padding: 250px 0 140px;
-          padding-left: 105px;
+          padding: 0;
+          padding-left: 150px;
+        }
+        .header_section .text-outline{
+          font-size:120px;
         }
         video {
           object-fit: cover;
@@ -77,6 +90,7 @@ const HomeHeaderSection = () => {
         }
         .header_section video {
           width: 100%;
+          height:93vh !important;
         }
         .cash_back {
           position: absolute;
@@ -96,15 +110,16 @@ const HomeHeaderSection = () => {
         }
         .header_section .hero_title {
           font-size: 70px;
-          line-height: 70px;
+          line-height: 1;
           font-weight: 600;
           color: #fff;
           margin: 0;
         }
         .header_section .hero_para {
-          margin: 25px 0;
+          margin: 30px 0;
           font-size: 20px;
           font-weight: 400;
+          line-height:1.3;
         }
         .header_section .btn {
           padding: 19px 36px;
