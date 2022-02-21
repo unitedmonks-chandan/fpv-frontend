@@ -77,7 +77,10 @@ export default function ResultComponent(
                         </a>
                       </Link>
                     </p>
-                          <Image className="recommended" src="/img/recommended_tag.png" alt="img" width={100} height={17}/>
+{ product && product.featured && (
+    <Image className="recommended" src="/img/recommended_tag.png" alt="img" width={100} height={17}/>
+)}
+                          
                           </div>
                   </div>
                   <div className="column_2" style={{ width: '14%' }}>

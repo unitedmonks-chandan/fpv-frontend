@@ -18,8 +18,12 @@ const HomeBlogList = () => {
               <div className="swiper-wrapper">
                 <Swiper breakpoints={{
                  // when window width is >= 1024px
-                      1024: {
+                      1280: {
                       slidesPerView: 3,
+                      },
+                 // when window width is >= 1024px
+                      768: {
+                      slidesPerView: 2,
                       },
                 // when window width is >= 640px
                        0: {
@@ -37,6 +41,7 @@ const HomeBlogList = () => {
                         <span className="published_date">
                           <i className="far fa-clock"></i> October 18, 2021
                         </span>
+                            <div className="category">LIFESTYLE</div>
                       </div>
                     </div>
                   </SwiperSlide>{' '}
@@ -51,6 +56,7 @@ const HomeBlogList = () => {
                         <span className="published_date">
                           <i className="far fa-clock"></i> October 18, 2021
                         </span>
+                            <div className="category">CREATIVE</div>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -65,6 +71,7 @@ const HomeBlogList = () => {
                         <span className="published_date">
                           <i className="far fa-clock"></i> October 18, 2021
                         </span>
+                            <div className="category">LIFESTYLE</div>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -93,6 +100,18 @@ const HomeBlogList = () => {
           margin: 0 auto;
           margin-bottom:20px;
         }
+        .our_blog .category{
+        position:absolute;
+        top:0;
+        left:0;
+        font-size:14px;
+        font-weight:500;
+        color:white;
+        padding:5px 10px;
+        z-index:20;
+        background:#3B18C6; 
+        border-radius:3px;
+        }
         .our_blog .blog {
           position:relative;
           margin-bottom: 20px;
@@ -119,9 +138,10 @@ const HomeBlogList = () => {
           bottom: 18%;
           z-index: 20;
           width: 70%;
-          padding: 10px;
+          padding-bottom:10px;
           color: white;
-          left: 20px;
+          left: 30px;
+          text-align:left;
         }
         .our_blog .blog .blog_des {
           margin: 9px 0;
@@ -132,7 +152,8 @@ const HomeBlogList = () => {
           color: white;
           bottom: 10%;
           z-index: 20;
-          left: 20px;
+          left: 30px;
+          font-size:14px;
         }
       `}</style>
     </>
