@@ -36,6 +36,9 @@
   .drone_section h2{
     font-size: 42px !important;
   }
+  .completed_drones .drone_section .name{
+    font-size:25px !important;
+  }
     .section_2 .text_content{
       padding: 35px !important;
     }
@@ -378,7 +381,7 @@
     .detail_content
     .browse_product_main
     .price {
-    font-size: 14px;
+    font-size: 18px;
   }
   .completed-builds .section_1 .section_title {
     margin-left: 20%;
@@ -466,6 +469,21 @@
     .section_2 .text_content p{
         font-size: 16px !important;
     }
+  .find_product .col_1{
+    width: 8%;
+  }
+  .find_product .col_2{
+    width: 10%;
+  }
+  .find_product .col_3{
+    width:48%;
+  }
+  .find_product .col_4{
+    width:27%;
+  }
+  .product_detail_main .detail_content{
+    margin-left:0 !important;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -634,6 +652,9 @@
   .completed-builds .product_detail_main .container {
     max-width: 100% !important;
   }
+  .completed_drones .drone_section{
+    padding: 40px !important;
+  }
 }
 
 @media (max-width: 800px) {
@@ -709,17 +730,51 @@
     font-size: 35px;
     padding-top: 5px;
   }
-  .find_product .product_detail,
   .find_product .header {
-    width: 800px;
+    display:none !important ;
+  }
+  .browse_product_main .find_product .product_detail{
+    height: auto;
+    flex-wrap:wrap;
+    padding: 20px;
+  }
+  .browse_product_main .product_icon{
+    display:none;
+  }
+  .find_product .product_detail .product-type{
+    display: block !important;
+    margin-bottom:20px;
   }
   .part_modal .find_product {
     width: 100%;
     overflow: scroll;
   }
+  .find_product .column_1{
+    width:100%;
+    margin-bottom: 20px;
+  }
+  .find_product .column_2{
+    width:auto;
+  }
+  .find_product .column_3{
+    width:auto;
+    margin-left: auto;
+  }
+  .find_product .column_4{
+    width:100%;
+  }
+  .completed-builds .product_detail_main .detail_content .browse_product_main .price{
+    font-size:20px;
+    display: block ruby;
+
+  }
   .find_product .product_detail .buy_now {
     white-space: pre;
-    font-size: 11px;
+   font-size: 14px;
+   width: 100%;
+   padding: 5px;
+  margin-top: 20px;
+    height:auto;
   }
   
 }
@@ -728,9 +783,6 @@
     max-width: 100% !important;
     padding: 0 10px;
 }
-   .find_product .product_detail .title{
-    font-size:9px !important;
-  }
   .section_1 .swiper{
     padding: 0 !important;
   }
@@ -748,6 +800,9 @@
   }
   .parts_drone{
     padding: 100px 10px !important;
+  }
+  .browse-products .fpv-products .col-sm-12{
+    text-align:center;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -768,13 +823,6 @@
     .header
     .column_1 {
     width: 47%;
-  }
-  .completed-builds
-    .product_detail_main
-    .browse_product_main
-    .find_product
-    .column_1 {
-    width: 60%;
   }
   .completed-builds
     .product_detail_main
@@ -806,13 +854,6 @@
   .completed-builds .browse_product_main .product_icon .name {
   font-size: 7px !important;
 }
-  .completed-builds .product_detail_main .find_product .product_detail {
-    padding: 10px 10px;
-    height: 68px;
-  }
-  .completed-builds .product_detail_main .find_product .product_detail .title {
-    font-size: 11px;
-  }
   .completed-builds
     .product_detail_main
     .find_product
@@ -821,7 +862,7 @@
     margin-left: 20%;
   }
   .completed-builds .product_detail_main .browse_product_main .buy_now {
-    width: 100%;
+   padding: 0 5px;
   }
 
   .build_now {
@@ -907,6 +948,9 @@
   .product_table .product_detail {
     padding: 12px 18px;
   }
+  .product_table .price{
+    font-size:16px !important;
+  }
   .custom_parts .drone_catagory.label_outline label {
     width: 100% !important;
     margin-right: 0;
@@ -942,13 +986,14 @@
     .column_1 {
     width: 47%;
   }
-  .completed-builds
+    .completed-builds
     .product_detail_main
     .browse_product_main
     .find_product
+    .header
     .column_1 {
-    width: 60%;
-  }
+      width: 40%;
+    }
   .completed-builds
     .product_detail_main
     .browse_product_main
@@ -956,13 +1001,29 @@
     .column_2 {
     padding: 5px;
   }
+   .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .find_product
+    .header
+    .column_2 {
+      padding-left:20%;
+    }
   .completed-builds
     .product_detail_main
     .browse_product_main
     .find_product
     .column_3 {
-    padding: 5px;
+    padding: 0 10px;
   }
+  .completed-builds
+    .product_detail_main
+    .browse_product_main
+    .find_product
+    .header
+    .column_3 {
+      padding-left:8%;
+    }
   .completed-builds
     .product_detail_main
     .browse_product_main
@@ -976,11 +1037,22 @@
     height: 68px;
     padding: 8px;
   }
-  .completed-builds .product_detail_main .find_product .product_detail {
-    height: 68px;
+  .completed-builds .product_detail_main .find_product .product_inner{
+    align-items:center;
+  }
+  .find_product .product_detail .buy_now{
+    width: 100%;
+    margin-right:0;
+  }
+  .find_product .column_4{
+    width:100%;
+    margin-top: 10px;
+  }
+  .find_product .price{
+    font-size:12px;
   }
   .completed-builds .product_detail_main .find_product .product_detail .title {
-    font-size: 11px;
+    font-size: 14px;
   }
    .completed-builds .browse_product_main .product_icon .name {
   font-size: 7px !important;

@@ -33,7 +33,7 @@ const HomeHeaderSection = () => {
                     id="header_video"
                     className="h-100"
                   >
-                    <source src="img/demo_video.mp4" type="video/mp4" />
+                    <source src="/img/banner-video.mp4" type="video/mp4" />
                     {/* <!-- <source src="img/landing 2.ogg" type="video/ogg"> --> */}
                     {/* <!-- <source src="img/landing 2.webm" type="video/webm"> --> */}
                     Your browser does not support HTML5 video.
@@ -122,9 +122,9 @@ const HomeHeaderSection = () => {
           line-height:1.3;
         }
         .header_section .btn {
-          padding: 19px 36px;
-          color: #1562b6;
-          border-radius: 5px;
+          padding: 20px 40px;
+          color:black;
+          border-radius: 3px;
           background-color: #fff;
         }
         .header_section .btn:hover {

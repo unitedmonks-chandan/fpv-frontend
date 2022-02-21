@@ -42,7 +42,7 @@ const HomeSectionOne = () => {
                           <div className="swiper-slide position-relative">
                             <div className="content">
                               <img
-                                src="/img/f-1.png"
+                                src="/img/custom_drone.jpg"
                                 alt="img"
                                 className="w-100"
                               />
@@ -61,13 +61,13 @@ const HomeSectionOne = () => {
                           <div className="swiper-slide position-relative">
                             <div className="content">
                               <img
-                                src="/img/f-1.png"
+                                src="/img/handmade_drone.jpg"
                                 alt="img"
                                 className="w-100"
                               />
                               <div className="footer d-flex align-items-center">
                                 <h3 className="text">
-                                  Build your custom drone
+                                  Buy our handmade drone
                                 </h3>
                                 <a href="#" className="link">
                                   <i className="fas fa-chevron-right"></i>
@@ -80,13 +80,13 @@ const HomeSectionOne = () => {
                           <div className="swiper-slide position-relative">
                             <div className="content">
                               <img
-                                src="/img/f-1.png"
+                                src="/img/drone_videographer.jpg"
                                 alt="img"
                                 className="w-100"
                               />
                               <div className="footer d-flex align-items-center">
                                 <h3 className="text">
-                                  Build your custom drone
+                                  Hire a Drone Videographer
                                 </h3>
                                 <a href="#" className="link">
                                   <i className="fas fa-chevron-right"></i>
@@ -99,13 +99,13 @@ const HomeSectionOne = () => {
                           <div className="swiper-slide position-relative">
                             <div className="content">
                               <img
-                                src="/img/f-1.png"
+                                src="/img/read_blog.jpg"
                                 alt="img"
                                 className="w-100"
                               />
                               <div className="footer d-flex align-items-center">
                                 <h3 className="text">
-                                  Build your custom drone
+                                  Read our blogs
                                 </h3>
                                 <a href="#" className="link">
                                   <i className="fas fa-chevron-right"></i>

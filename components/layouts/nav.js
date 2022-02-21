@@ -6,6 +6,7 @@ import GoogleAuth from '../helpers/GoogleAuth'
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 const btnBlueGrad = {
+  position:'relative',
   padding: ' 20px 40px',
   /* height: 70px; */
   fontSize: '18px',
@@ -13,7 +14,7 @@ const btnBlueGrad = {
   color: ' #fff',
   background: 'linear-gradient(96.48deg, #1562b6 8.17%, #4c2dcb 93.07%)',
   borderRadius: 0,
-  transition: ' 0.2s',
+  transition: ' 0.2s ease',
 }
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -99,10 +100,10 @@ export default function Nav() {
 
           <div className="btn" style={btnBlueGrad}>
             {user ? (
-              <span onClick={goToDashboard}>MY ACCOUNT</span>
+              <span className="btn-text" onClick={goToDashboard}>MY ACCOUNT</span>
             ) : (
               <>
-                <div onClick={googleLogIn}>
+                <div className="btn-text" onClick={googleLogIn}>
                   LOGIN
                   <div className="nav-login">
                     <GoogleAuth ref={logInRef} />

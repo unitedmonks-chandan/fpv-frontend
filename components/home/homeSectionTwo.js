@@ -16,7 +16,7 @@ const HomeSectionTwo = () => {
                     loop
                     id="myVideo"
                   >
-                    <source src="img/demo_video_2.mp4" type="video/mp4" />
+                    <source src="/img/demo_video_2.mp4" type="video/mp4" />
                     {/* <!-- <source src="img/landing 2.ogg" type="video/ogg"> --> */}
                     {/* <!-- <source src="img/landing 2.webm" type="video/webm"> --> */}
                     Your browser does not support HTML5 video.
@@ -33,7 +33,7 @@ const HomeSectionTwo = () => {
                   </p>
                   <Link href="/build-your-drone/">
                     <a className="btn btn-blue-grad d-block">
-                      LET’S GET STARTED
+                      <span className="btn-text">LET’S GET STARTED</span>
                     </a>
                   </Link>
                 </div>
@@ -54,6 +54,11 @@ const HomeSectionTwo = () => {
            width: 100%;
            overflow: hidden;
           }
+          .section_2 .btn-text{
+           position:relative;
+           z-index:20;
+           color:#fff;
+        } 
         .how_it_works .section_title {
           font-size: 60px;
           color: #fff;

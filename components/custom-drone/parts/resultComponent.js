@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { itemInCart, itemTypeCart } from '../../../context/searchContext'
 const formatter = new Intl.NumberFormat('en-US', {
@@ -68,6 +69,7 @@ export default function ResultComponent(
                       />
                     )}
 
+                    <div className="product-title">
                     <p className="title m-0">
                       <Link href={'/products/' + product._id}>
                         <a target="_blank" style={{ textDecoration: 'none' }}>
@@ -75,6 +77,8 @@ export default function ResultComponent(
                         </a>
                       </Link>
                     </p>
+                          <Image className="recommended" src="/img/recommended_tag.png" alt="img" width={100} height={17}/>
+                          </div>
                   </div>
                   <div className="column_2" style={{ width: '14%' }}>
                     <h2 className="price m-0">

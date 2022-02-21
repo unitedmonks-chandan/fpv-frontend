@@ -89,7 +89,7 @@ const HomeDroneParts = () => {
             </div>
             <div className="btns d-flex justify-content-center">
               <Link href="/products">
-                <a className="btn btn-blue-grad">CHECK ALL CATEGORY</a>
+                <a className="btn btn-blue-grad"><span className="btn-text">CHECK ALL CATEGORY</span></a>
               </Link>
             </div>
           </div>
@@ -100,6 +100,11 @@ const HomeDroneParts = () => {
           background-color: #1f1f1f;
           padding: 100px 0;
           color: #fff;
+        }
+        .parts_drone .btn-text{
+        position:relative;
+        z-index:20;
+        color:#fff;
         }
         .parts_drone .text-content {
           position:relative;

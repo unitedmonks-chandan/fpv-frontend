@@ -105,7 +105,7 @@ function Products({ data, page, categories }) {
                   </div>
                 ) : (
                   <>
-                    <div className="fpv-products mt-40">
+                    <div className="fpv-products">
                       <div className="row">
                         {productResult.products && (
                           <ProductCard products={productResult.products} />
@@ -126,8 +126,10 @@ function Products({ data, page, categories }) {
                         text="PREVIOUS"
                         disabled={page === 1}
                       >
+                          <span className="btn-text">
                         <i className="fas fa-angle-double-left"></i>
                         <p className="px14 ml-15">PREVIOUS</p>
+                          </span>
                       </button>
                       <button
                         type="button"
@@ -144,8 +146,10 @@ function Products({ data, page, categories }) {
                           productResult.lastPage === 0
                         }
                       >
+                          <span className="btn-text">
                         <p className="px14 mr-15">NEXT</p>
                         <i className="fas fa-angle-double-right"></i>
+                          </span>
                       </button>
                     </div>
                   </>
@@ -180,8 +184,13 @@ function Products({ data, page, categories }) {
           outline: none;
           background: white;
           font-size: 16px;
-          padding: 10px;
+          padding: 15px 10px;
           width: 100%;
+          font-weight: 500;
+          border-radius: 3px;
+        }
+        .browse-products .filter-products .fpv-filter option{
+         font-weight:500;
         }
         .browse-products .fpv-products .product-box {
           cursor: pointer;
@@ -219,12 +228,14 @@ function Products({ data, page, categories }) {
           margin-bottom: 0;
         }
         .browse-products .pagination-button {
+          position:relative;
           display: flex;
           padding: 10px 20px;
           border-radius: 5px;
           border: none;
           color: white;
           align-items: center;
+          transition: .3s ease all;
           background: linear-gradient(
             129.96deg,
             #1562b6 15.93%,
@@ -232,9 +243,34 @@ function Products({ data, page, categories }) {
           );
         }
 
+      .browse-products .pagination-button:after{
+         display:block;
+         content:'';
+         width:100%;
+         height:100%;
+         position:absolute;
+         top:0;
+         left:0;
+         background:linear-gradient(96.48deg, #4c2dcb 8.17%, #1562b6 63.07%);
+         z-index:10;
+         opacity:0;
+         border-radius:3px;
+         transition:.2s ease;
+       }
+ .browse-products .pagination-button:hover:after{
+        opacity:1;
+ }
+        
         .browse-products .disabled {
           opacity: 0.7;
         }
+
+         .browse-products .btn-text{
+            display: flex;
+            align-items: center;
+            position:relative;
+            z-index: 20;
+         }
 
         .error {
           background: rgba(255, 255, 255, 0.6);

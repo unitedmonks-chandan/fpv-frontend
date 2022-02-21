@@ -26,8 +26,8 @@ export default function droneParts({ data }) {
 
   const Part = ({ itemName, item, formatter }) =>
     drone && (
-      <div className="d-flex">
-        <div className="product_icon bg-blue-grad flex-cente">
+      <div className="d-flex product_box">
+        <div className="product_icon bg-blue-grad">
           <Image
             src={`/product_icons/${itemName}.png`}
             alt="icon"
@@ -37,15 +37,17 @@ export default function droneParts({ data }) {
           <h3 className="name">{itemName}</h3>
         </div>
         <div className="product_detail w-100 border-1 text-center d-flex align-items-center">
+              <p className="product-type">BATTERY</p>
           <div className="column_1 d-flex align-items-center">
             <img
+              className="product-img"
               width="50px"
               src={item.featuredImage?.url}
               alt={item.featuredImage && item.name}
             />
             <Link href={`/products/${item._id}`}>
               <a>
-                <p className="title m-0 text-dark">{item.name}</p>
+                <p className="title text-dark">{item.name}</p>
               </a>
             </Link>
           </div>
@@ -53,10 +55,11 @@ export default function droneParts({ data }) {
             (item) =>
               item.mainMerchant && (
                 <>
-                  <div className="column_2">
+                  <div className="column_2 text-center">
                     <h2 className="price m-0 text-blue">
                       $ {formatter.format(item.price)}
                     </h2>
+                      <p className="compare-prices">COMPARE PRICES</p>
                   </div>
                   <div className="column_3">
                     <div className="where">
@@ -68,9 +71,9 @@ export default function droneParts({ data }) {
                       target="_blank"
                       rel="noopener noreferrer"
                       href={item.affiliateLink}
-                      className="buy_now bg-blue-grad text-white"
+                      className="buy_now bg-blue-grad"
                     >
-                      BUY NOW
+                        <span className="btn-text">BUY NOW</span>
                     </a>
                   </div>
                 </>
@@ -88,9 +91,9 @@ export default function droneParts({ data }) {
             <h1 className="hero_title">Our Completed Build</h1>
           </div>
           <div className="product_detail_main">
-            <div className="container fpv-completed-fluid">
+            <div className="container">
               <div className="row">
-                <div className="col-lg-4 fpv-bg-swiper">
+                <div className="col-xl-4 col-md-12">
                   <div className="swiper gallery-top mySwiper2 position-relative">
                     <Swiper slidesPerView={1} navigation={true} loop={true}>
                       {drone &&
@@ -151,7 +154,7 @@ export default function droneParts({ data }) {
                     </div>
                   </div> */}
                 </div>
-                <div className="col-xl-8">
+                <div className="col-xl-8 col-md-12">
                   <div className="detail_content">
                     <h2 className="product_title">{drone.droneName}</h2>
                     <div className="reviews d-flex align-items-center">
@@ -165,23 +168,24 @@ export default function droneParts({ data }) {
                       <h4 className="font-weight-bold mt-20">Part List</h4>
 
                       <div className="browse_product_main mt-20">
-                        <div className="container browse-container">
-                          <div className="content">
                             <div className="find_product text-white m-0">
                               <div className="header d-flex">
-                                <div className="column_1">
+                                <div className="col_1">
                                   <h4 className="title text-dark">Component</h4>
-                                  <h4 className="title title-2 text-dark">
+                                 
+                                </div>
+                                <div className="col_2">
+                                 <h4 className="title text-dark">
                                     Selection
                                   </h4>
+                                  
                                 </div>
-                                <div className="column_2">
+                                <div className="col_3">
                                   <h4 className="title text-dark">Price</h4>
+                                  
                                 </div>
-                                <div className="column_3">
-                                  <h4 className="title text-dark">Where</h4>
-                                </div>
-                                <div className="column_4"></div>
+                                <div className="col_4">
+                               <h4 className="title text-dark">Where</h4></div>
                               </div>
                               <Part
                                 itemName="FRAME"
@@ -235,13 +239,11 @@ export default function droneParts({ data }) {
                                 item={drone.miscellaneous}
                                 formatter={formatter}
                               />
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -495,21 +497,8 @@ export default function droneParts({ data }) {
           margin: 0;
           padding: 0;
         }
-        .completed-builds
-          .product_detail_main
-          .detail_content
-          .browse_product_main
-          .header
-          .title {
-          padding: 0;
-        }
-        .completed-builds
-          .product_detail_main
-          .detail_content
-          .browse_product_main
-          .header
-          .title-2 {
-          padding-left: 12%;
+        .product_detail_main .detail_content{
+        margin-left:20px;
         }
         .completed-builds
           .product_detail_main
@@ -621,13 +610,6 @@ export default function droneParts({ data }) {
           .completed-builds .product_detail_main .find_product .product_detail {
             padding: 10px 10px;
             height: 68px;
-          }
-          .completed-builds
-            .product_detail_main
-            .find_product
-            .product_detail
-            .title {
-            font-size: 11px;
           }
           .completed-builds
             .product_detail_main

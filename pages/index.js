@@ -38,7 +38,7 @@ export default function Home() {
           <HomeDroneThree />
 
           <div className="text-center content">
-            <div className="btn btn-blue-grad mt-70 rounded">VIEW MORE PRODUCTS</div>
+            <div className="btn btn-blue-grad mt-70 rounded"><span className="btn-text">VIEW MORE PRODUCTS</span></div>
           </div>
         </div>
 
@@ -55,6 +55,11 @@ export default function Home() {
           top: 34px;
           z-index: 9;
         }
+         .btn-text{
+           position:relative;
+           z-index:20;
+           color:#fff;
+        } 
         .header_section::before {
           background: linear-gradient(
             129.96deg,

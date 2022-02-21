@@ -34,11 +34,6 @@ const HomeBlogList = () => {
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quisque sapien velit,
                         </h3>
-                        <p className="blog_des">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque sapien velit, aliquet eget commodo nec,
-                          auctor a sapien.
-                        </p>
                         <span className="published_date">
                           <i className="far fa-clock"></i> October 18, 2021
                         </span>
@@ -51,13 +46,8 @@ const HomeBlogList = () => {
                         <img src="img/blog_img.png" alt="blog" />
                         <h3 className="blog_title">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque sapien velit,
+                          elit.
                         </h3>
-                        <p className="blog_des">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque sapien velit, aliquet eget commodo nec,
-                          auctor a sapien.
-                        </p>
                         <span className="published_date">
                           <i className="far fa-clock"></i> October 18, 2021
                         </span>
@@ -70,13 +60,8 @@ const HomeBlogList = () => {
                         <img src="img/blog_img.png" alt="blog" />
                         <h3 className="blog_title">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque sapien velit,
+                          elit.
                         </h3>
-                        <p className="blog_des">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque sapien velit, aliquet eget commodo nec,
-                          auctor a sapien.
-                        </p>
                         <span className="published_date">
                           <i className="far fa-clock"></i> October 18, 2021
                         </span>
@@ -109,19 +94,45 @@ const HomeBlogList = () => {
           margin-bottom:20px;
         }
         .our_blog .blog {
+          position:relative;
           margin-bottom: 20px;
+        }
+        .our_blog img{
+        position:relative;
+        z-index:10;
+        width:100%;
+        }
+        .our_blog .blog:after{
+        display:block;
+        content:'';
+        background: rgba(64, 64, 64, .6);
+        width:100%;
+        height:100%;
+        position:absolute;
+        z-index:15;
+        top:0;
+        left:0;
         }
         .our_blog .blog .blog_title {
           font-size: 25px;
-          margin-top: 24px;
-          margin-bottom: 0;
+          position: absolute;
+          bottom: 18%;
+          z-index: 20;
+          width: 70%;
+          padding: 10px;
+          color: white;
+          left: 20px;
         }
         .our_blog .blog .blog_des {
           margin: 9px 0;
           color: #898989;
         }
         .our_blog .published_date {
-          color: #3b18c6;
+          position: absolute;
+          color: white;
+          bottom: 10%;
+          z-index: 20;
+          left: 20px;
         }
       `}</style>
     </>
