@@ -878,6 +878,13 @@ p.title a {
   background-color: rgba(0, 0, 0, 60%);
 }
 
+.blog .slider_sm .swiper-button-prev{
+  top:39%;
+  width: 35px;
+  height: 35px;
+  left:17px !important;
+}
+
 .swiper-button-prev {
   position: absolute;
   top: 8%;
@@ -920,6 +927,12 @@ p.title a {
   right: -25px !important;
   background: url('/icons/icons8-chevron-right-24.png') no-repeat center;
   background-color: rgba(0, 0, 0, 60%);
+}
+.blog .slider_sm .swiper-button-next{
+  top:39%;
+  width: 35px;
+  height: 35px;
+  right: -17px !important;
 }
 
 .swiper-button-next {
@@ -1055,5 +1068,8 @@ background: black !important;
 }
 .blog .swiper-slide{
 overflow:hidden;
+}
+.blog .slider_sm .swiper-pagination{
+display:none;
 }
 

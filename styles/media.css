@@ -12,6 +12,10 @@
     .section_2 .text_content p{
       margin-bottom: 120px !important;
     }
+
+    .blog .slider_content .slide-content{
+      padding-left:90px !important;
+    }
 }
 
 @media (min-width: 1450px) {
@@ -190,6 +194,9 @@
   .custom_parts input + label .option-2 {
     margin-left: 3rem;
   }
+    .blog .slider_content .slide-content{
+      padding-left:75px !important;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -228,6 +235,18 @@
     .section_2 .text_content p{
       margin-bottom: 130px !important;
     }
+     .blog .slider_content .slide-content{
+      padding-left:66px !important;
+    }
+  .blog .scroll-box{
+    height:230px !important;
+  }
+  .blog .blog-item .blog_title{
+    font-size:20px !important;
+  }
+   .blog .blog-item .published_date{
+    font-size:13px !important;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
@@ -301,6 +320,12 @@
       font-size: 18px; 
       margin-bottom: 60px !important;
     }
+  .blog .slider_content .img-box{
+    height:450px !important;
+  }
+  .blog .slider_content .blog_title{
+    font-size:33px !important;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -490,6 +515,55 @@
   .product_detail_main .detail_content{
     margin-left:0 !important;
   }
+  .blog .swiper-pagination{
+    right:39% !important;
+  }
+    .blog .slider_content .img-box{
+    height:400px !important;
+  }
+  .blog .fpv-sidebar{
+    margin-top:60px;
+    padding: 5px 80px !important;
+  }
+  .blog .title-text{
+    font-size:25px !important;
+    margin-bottom:30px !important;
+  }
+  .blog .slider_sm .blog_title{
+    font-size:18px;
+    font-weight:500;
+  }
+  .blog .blog-most{
+    margin-top:40px;
+  }
+  .blog .blog-recommended:after{
+    margin-top:40px;
+    display:block;
+    content:'';
+    height:1px;
+    width:100%;
+    background:#777777;
+  }
+  .blog .blog-most:after{
+    margin-top:60px;
+    display:block;
+    content:'';
+    height:1px;
+    width:100%;
+    background:#777777;
+  }
+  .blog-most .blog-most-item img{
+    width:90px;
+  }
+  .blog .pagination{
+    margin-top:40px !important;
+  }
+  .blog .explore-item .category{
+    left:35% !important;
+  }
+    .blog .scroll-box{
+    height:275px !important;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -651,6 +725,30 @@
     margin: auto 0;
     width: 50%;
   }
+  .blog .slider_content .swiper-button-next, .blog .slider_content .swiper-button-prev{
+    top:31% !important;
+  }
+  .blog .slider_sm .swiper-button-next, .blog .slider_sm .swiper-button-prev{
+    top:50% !important;
+  }
+  .blog .slider_content .slide-content{
+    padding-left:0 !important;
+    padding:40px !important;
+    padding-bottom:70px !important;
+  }
+  .blog .slider_content .swiper-pagination{
+    bottom: 20px !important;
+    left: 25px !important;
+  }
+  .blog .container{
+    max-width: 100% !important;
+  }
+  .blog .blog-main{
+    padding: 60px 0 !important;
+  }
+   .blog .explore-item .category{
+    left:37% !important;
+  }
 }
 
 
@@ -673,6 +771,12 @@
   }
   .section_1 .swiper-slide .footer .text{
     font-size: 18px !important; 
+  }
+    .blog .explore-item .category{
+    left:30% !important;
+  }
+  .blog .fpv-sidebar{
+    padding: 5px 65px !important;
   }
 }
 
@@ -782,7 +886,9 @@
   margin-top: 20px;
     height:auto;
   }
-  
+   .blog .fpv-sidebar{
+    padding: 5px 45px !important;
+  }
 }
 @media (max-width: 640px) {
     .completed-builds .product_detail_main .container {
@@ -809,6 +915,19 @@
   }
   .browse-products .fpv-products .col-sm-12{
     text-align:center;
+  }
+  .blog .blog-item{
+    width:90%;
+    margin:20px auto !important;
+  }
+   .blog .explore-item .category{
+    left:38% !important;
+  }
+  .blog .pagination{
+    padding-right:40px !important;
+  }
+  .blog .slider_sm .swiper-button-next, .blog .slider_sm .swiper-button-prev{
+    top:42% !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1087,6 +1206,27 @@
   }
   .drone_parts .social-box {
     width: 70%;
+  }
+     .blog .slider_content .img-box{
+    height:330px !important;
+  }
+  .blog .slider_content .swiper-button-next, .blog .slider_content .swiper-button-prev{
+    top:27% !important;
+  }
+    .blog .fpv-sidebar{
+    padding: 5px !important;
+  }
+  .blog-most .blog-most-item img{
+    width:110px;
+  }
+     .blog .explore-item .category{
+    left:36% !important;
+  }
+    .blog .pagination{
+    padding-right:30px !important;
+  }
+    .blog .slider_sm .swiper-button-next, .blog .slider_sm .swiper-button-prev{
+    top:39% !important;
   }
 }
 

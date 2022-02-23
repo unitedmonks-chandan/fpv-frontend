@@ -21,7 +21,9 @@ export default function BlogSlider(){
                         <SwiperSlide>
                            <div className="row">
                            <div className="col-lg-6 slide-img p-0">
-                            <Image src="/img/slider-1.png" width={970} height={500} ></Image>
+                            <div className="img-box">
+                            <Image src="/img/slider-1.png" className="image" layout="fill" ></Image>
+                               </div>
                             </div>
                            <div className="col-lg-6 p-0">
                             <div className="slide-content">
@@ -40,7 +42,9 @@ export default function BlogSlider(){
                         <SwiperSlide>
                            <div className="row">
                            <div className="col-lg-6 slide-img p-0">
-                            <Image src="/img/slider-1.png" width={970} height={500} ></Image>
+                            <div className="img-box">
+                            <Image src="/img/slider-1.png" className="image" layout="fill" ></Image>
+                               </div>
                             </div>
                            <div className="col-lg-6 p-0">
                             <div className="slide-content">
@@ -59,7 +63,9 @@ export default function BlogSlider(){
                         <SwiperSlide>
                            <div className="row">
                            <div className="col-lg-6 slide-img p-0">
-                            <Image src="/img/slider-1.png" width={970} height={500} ></Image>
+                            <div className="img-box">
+                            <Image src="/img/slider-1.png" className="image" layout="fill" ></Image>
+                               </div>
                             </div>
                            <div className="col-lg-6 p-0">
                             <div className="slide-content">
@@ -82,6 +88,7 @@ export default function BlogSlider(){
                     </div>
 
 <style jsx>{`
+
 .slider_content .row{
 align-items:center;
 background: #F0F1F2;
@@ -95,6 +102,14 @@ padding-left:110px;
 .slider_content .slide-img{
 margin-bottom:-10px;
 }
+.slider_content .img-box{
+width:100%;
+position:relative;
+height:502px;
+}
+.slider_content .image {
+    object-fit: contain;
+  }
 .slider_content .category{
         width:auto;
         font-size:14px;

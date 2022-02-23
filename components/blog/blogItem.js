@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function BlogItem({key}){
   return(
     <>
-     <div className="col-lg-6" key={key}>
+     <div className="col-md-6" key={key}>
     <div className="blog-item">
                         <img src="img/blog_img.png" alt="blog" />
                         <h3 className="blog_title">
@@ -38,6 +38,7 @@ export default function BlogItem({key}){
         position:relative;
         z-index:10;
         width:100%;
+        border-radius:3px;
         }
         .blog-item:after{
         display:block;
@@ -49,6 +50,7 @@ export default function BlogItem({key}){
         z-index:15;
         top:0;
         left:0;
+        border-radius:3px;
         }
         .blog-item .blog_title {
           font-size: 25px;
