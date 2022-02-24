@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import Layout from '../../components/layouts/layout'
 import Image from 'next/image'
+import { withRouter, useRouter } from 'next/router'
 
 import BlogSlider from '../../components/blog/blogSlider'
 import BlogItem from '../../components/blog/blogItem'
 import BlogSliderSm from '../../components/blog/blogSliderSm'
 
 export default function BlogListing(){
+  const router = useRouter();
 
     const [ blogItems, setBlogItems ] = useState([1,2,3,4,5,6 ])
     const [ blogMostItems, setBlogMostItems ] = useState([1,2,3,4,5 ])
@@ -114,7 +116,7 @@ width:100%
     
               <div className="row">
       { blogItems && blogItems.map((item,key)=>(
-        <BlogItem  key={key}/>
+        <BlogItem  key={key} router={router}/>
       ))}
               <div className="pagination mt-5">
                       <button

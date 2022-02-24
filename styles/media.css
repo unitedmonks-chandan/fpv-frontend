@@ -247,6 +247,9 @@
    .blog .blog-item .published_date{
     font-size:13px !important;
   }
+  .blog-page .blog-post .post-img{
+    height:475px !important;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
@@ -564,6 +567,22 @@
     .blog .scroll-box{
     height:275px !important;
   }
+   .blog-page .blog-post .post-img{
+    height:405px !important;
+  }
+   .blog-page .blog-post .blog_title{
+    font-size:33px !important;
+     line-height:1 !important;
+  }
+   .blog-page .post-pagination .blog-title{
+     font-size:16px;
+   }
+   .blog-page form .buy_now{
+     font-size:16px;
+   }
+  .blog-page .share-section{
+    top:150px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -748,6 +767,35 @@
   }
    .blog .explore-item .category{
     left:37% !important;
+  }
+  .blog-page .blog-post .post-content{
+    width:100%;
+  }
+  .blog-page .share-section{
+    position:relative !important;
+    top:0 !important;
+    left:auto !important;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .blog-page .share-section .line{
+    margin:0 10px !important;
+  }
+   .blog-page .share-section .share-text{
+     margin-bottom:0px !important;
+   }
+  .blog-page .share-section .icon-box{
+    width:44px !important;
+    margin-top:0 !important;
+    margin-left:10px !important;
+  }
+   .blog-page .blog-post .post-content{
+    width:100% !important;
+  }
+   .blog-page .blog-post .post-img{
+    height:370px !important;
   }
 }
 

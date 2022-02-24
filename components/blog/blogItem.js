@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-export default function BlogItem({key}){
+export default function BlogItem({key, id}){
   return(
     <>
      <div className="col-md-6" key={key}>
     <div className="blog-item">
-                        <img src="img/blog_img.png" alt="blog" />
-                        <h3 className="blog_title">
+                        <img src="img/blog_img.png" alt="blog" />                        <h3 className="blog_title">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quisque sapien velit,
                         </h3>

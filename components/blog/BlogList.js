@@ -5,13 +5,13 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 SwiperCore.use([Navigation])
 
-const HomeBlogList = () => {
+const BlogList = () => {
   return (
     <>
       <div className="our_blog">
         <div className="container">
           <div className="text-content">
-            <h2 className="section_title text-center">Our Blog</h2>
+            <h2 className="section_title text-center">You may also like</h2>
           </div>
           <div className="content">
             <div className="swiper mySwiper">
@@ -33,7 +33,7 @@ const HomeBlogList = () => {
                   <SwiperSlide>
                     <div className="swiper-slide">
                       <div className="blog">
-                        <img src="/img/blog_img.png" alt="blog" />
+                        <img src="/img/blog_list.jpg" alt="blog" />
                         <h3 className="blog_title">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quisque sapien velit,
@@ -41,14 +41,14 @@ const HomeBlogList = () => {
                         <span className="published_date">
                           <i className="far fa-clock"></i> October 18, 2021
                         </span>
-                            <div className="category">LIFESTYLE</div>
+                            <div className="category">INSPIRATION</div>
                       </div>
                     </div>
                   </SwiperSlide>{' '}
                   <SwiperSlide>
                     <div className="swiper-slide">
                       <div className="blog">
-                        <img src="/img/blog_img.png" alt="blog" />
+                        <img src="/img/blog_list.jpg" alt="blog" />
                         <h3 className="blog_title">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit.
@@ -56,14 +56,14 @@ const HomeBlogList = () => {
                         <span className="published_date">
                           <i className="far fa-clock"></i> October 18, 2021
                         </span>
-                            <div className="category">CREATIVE</div>
+                            <div className="category">INSPIRATION</div>
                       </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="swiper-slide">
                       <div className="blog">
-                        <img src="/img/blog_img.png" alt="blog" />
+                        <img src="/img/blog_list.jpg" alt="blog" />
                         <h3 className="blog_title">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit.
@@ -71,7 +71,7 @@ const HomeBlogList = () => {
                         <span className="published_date">
                           <i className="far fa-clock"></i> October 18, 2021
                         </span>
-                            <div className="category">LIFESTYLE</div>
+                            <div className="category">INSPIRATION</div>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -89,16 +89,6 @@ const HomeBlogList = () => {
         .our_blog .text-content {
           position:relative;
           margin-bottom: 40px;
-        }
-        .our_blog .section_title::before{
-          display:block;
-          content:'';
-          background: #3b18c6;
-          height:5px;
-          width:85px;
-          top:0;
-          margin: 0 auto;
-          margin-bottom:20px;
         }
         .our_blog .category{
         position:absolute;
@@ -160,4 +150,4 @@ const HomeBlogList = () => {
   )
 }
 
-export default HomeBlogList
+export default BlogList
